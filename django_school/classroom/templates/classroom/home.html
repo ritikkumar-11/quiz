@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Welcome to Django School! <span class="icon-emo-happy"></span></h2>
+  
+  <p class="lead">
+    If you already have an account, please <a href="{% url 'login' %}">log in</a>. If you're new, you can create a
+    <a href="{% url 'student_signup' %}">student account</a> or a <a href="{% url 'teacher_signup' %}">teacher account</a> to get started.
+  </p>
+  
+  <hr>
+  
+  <h3>About Django School</h3>
+  <p>
+    This application allows users to sign up as either a student or a teacher. Teachers can create quizzes, and students can take quizzes based on their interests. The goal is to provide a flexible learning platform where students and teachers can interact and share knowledge.
+  </p>
+  
+  <p>
+    Interested in learning more? Check out the project on <a href="https://github.com/your-username/your-repo">GitHub</a> for detailed instructions on how to run this project locally.
+  </p>
+  
+  <p class="mb-0">Your Name<br><a href="https://twitter.com/your-twitter-handle">@your-twitter-handle</a></p>
+{% endblock %}
